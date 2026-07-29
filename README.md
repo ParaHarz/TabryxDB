@@ -10,6 +10,16 @@ TabryxDb is a small database engine written in Rust. It stores multiple string-b
 
 The project is designed for small databases that can be kept in memory. It favors a simple deployment model—one native library and one database file—over the complexity of a client/server database.
 
+## Download
+
+Download the latest prebuilt package from [GitHub Releases](../../releases/latest).
+
+Release assets may include:
+
+- **Tabryx Manager** — the Windows desktop database manager;
+- **Tabryx SDK** — the native DLL, C header, import library, and integration examples;
+- **checksums** — hashes for verifying downloaded archives.
+
 ## Highlights
 
 - **Single-file storage** — an entire database is stored in one `.tbyx` file.
@@ -87,16 +97,6 @@ Supported query features include:
 - optional ASCII case-insensitive matching per database handle.
 
 All stored non-null values are strings. TabryxDb currently has no numeric types, primary keys, indexes, joins, subqueries, `GROUP BY`, or concurrent-write coordination.
-
-## Download
-
-Download the latest prebuilt package from [GitHub Releases](../../releases/latest).
-
-Release assets may include:
-
-- **Tabryx Manager** — the Windows desktop database manager;
-- **Tabryx SDK** — the native DLL, C header, import library, and integration examples;
-- **checksums** — hashes for verifying downloaded archives.
 
 ## System Requirements
 
