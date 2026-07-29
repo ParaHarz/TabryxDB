@@ -4,7 +4,7 @@
   <strong>An encrypted, single-file database for compact embedded applications.</strong>
 </p>
 
-TabryxDb is a small database engine written in Rust. It stores multiple string-based tables in one encrypted file, exposes a stable C ABI, and includes a Windows desktop manager for browsing and editing data.
+TabryxDB is a small database engine written in Rust. It stores multiple string-based tables in one encrypted file, exposes a stable C ABI, and includes a Windows desktop manager for browsing and editing data.
 
 > This GitHub repository distributes prebuilt binaries. Source code is not included in public releases.
 
@@ -34,7 +34,7 @@ Release assets may include:
 
 ## Intended Use
 
-TabryxDb is suitable for:
+TabryxDB is suitable for:
 
 - desktop application settings and structured local data;
 - small encrypted catalogs, test profiles, and utility databases;
@@ -50,7 +50,7 @@ Application
     |
     | C ABI / P/Invoke (UTF-8)
     v
-TabryxDb engine (Rust)
+TabryxDB engine (Rust)
     |
     +-- in-memory tables: columns + rows of optional strings
     +-- SQL parser and executor
@@ -96,7 +96,7 @@ Supported query features include:
 - `LIMIT` and `OFFSET`;
 - optional ASCII case-insensitive matching per database handle.
 
-All stored non-null values are strings. TabryxDb currently has no numeric types, primary keys, indexes, joins, subqueries, `GROUP BY`, or concurrent-write coordination.
+All stored non-null values are strings. TabryxDB currently has no numeric types, primary keys, indexes, joins, subqueries, `GROUP BY`, or concurrent-write coordination.
 
 ## System Requirements
 
@@ -431,13 +431,13 @@ Result strings are UTF-8 and owned by the result handle. Release each query resu
 - A fresh salt and nonce are generated whenever the database is saved.
 - The full plaintext database exists in process memory while open.
 - Password strength remains important even with Argon2id.
-- TabryxDb does not automatically save on close; applications should handle save failures explicitly.
+- TabryxDB does not automatically save on close; applications should handle save failures explicitly.
 - Back up important data. This project is currently version `1.0.0` and should be evaluated carefully before production use.
 
 ## Project Status
 
-TabryxDb is an early-stage project. Its API and file format may evolve before a stable release. Review the release notes before upgrading applications or important databases. Issue reports are welcome.
+TabryxDB is an early-stage project. Its API and file format may evolve before a stable release. Review the release notes before upgrading applications or important databases. Issue reports are welcome.
 
 ## License
 
-TabryxDb binaries and accompanying documentation are released under the [MIT License](LICENSE). The MIT License permits binary-only distribution and does not require public source-code publication. Include the license text when redistributing TabryxDb.
+TabryxDB binaries and accompanying documentation are released under the [MIT License](LICENSE). The MIT License permits binary-only distribution and does not require public source-code publication. Include the license text when redistributing TabryxDB.
