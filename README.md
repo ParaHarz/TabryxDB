@@ -1,4 +1,4 @@
-# TabryxDb
+# TabryxDB
 
 <p align="center">
   <strong>An encrypted, single-file database for compact embedded applications.</strong>
