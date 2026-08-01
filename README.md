@@ -1,5 +1,7 @@
 # TabryxDB
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 <p align="center">
   <strong>An encrypted, single-file database for compact embedded applications.</strong>
 </p>
